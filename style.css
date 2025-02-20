@@ -1,3 +1,4 @@
+/* General Styles */
 p {
     display: block;
     margin-block-start: 1em;
@@ -10,30 +11,31 @@ p {
     letter-spacing: 1.2px;
     text-align: justify;
 }
-body{
 
-    background-color:aquamarine;
-
+body {
+    background-color: aquamarine;
 }
-img{
+
+img {
     width: 300px;
     height: 320px;
     margin-left: 150px;
     border-radius: 150px;
     margin-top: 70px;
-    
+    margin-bottom: 10vh;
 }
 
-.conatiner,.man{ 
-    margin-left:150px ;
+.conatiner, .man { 
+    margin-left: 150px;
     margin-right: 150px;
 }
 
-.read{
+.read {
     margin-left: 330px;
     margin-right: 150px;
 }
-ul{
+
+ul {
     display: block;
     list-style-type: disc;
     margin-block-start: 1em;
@@ -44,42 +46,111 @@ ul{
     unicode-bidi: isolate;
     margin-left: 50px;
     line-height: 2;
-    
-    
-    
 }
- /* .Biographies{
-    margin-left: 50px;
-    font-size: 18px;
-    letter-spacing: 1.2px;
-    margin-top: 30px;
-    
-}  */
-*{
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
 }
-h1{
+
+h1 {
     margin-left: 540px;
     font-size: 50px;
     margin-top: -20px;
     position: relative;
-    
 }
-.name{
+
+.name {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
-h4{
-    margin-left:820px;
+
+h4 {
+    margin-left: 820px;
     font-size: 30px;
 }
-.footer{
+
+.footer {
     margin-top: 20px;
-    margin-left: 270px;
-    
+    margin-left: 50vh;
 }
-@media 
-    
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    img {
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .conatiner, .man, .read {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .read {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    ul {
+        font-size: 18px;
+        padding-inline-start: 30px;
+    }
+
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    ul {
+        font-size: 14px;
+    }
+
+    .footer {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
